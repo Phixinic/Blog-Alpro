@@ -9,3 +9,6 @@ This is blog website created using native PHP and SQL data base for backend, and
 * Edit post
 * Delete post
 * Localization
+# Pembuat
+* Heka
+* Xander
