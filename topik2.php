@@ -3,59 +3,48 @@
 
 <head>
     <title>ALPRO</title>
-    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="stylesheet" href="assets/styles/stylee.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
     <header>
-        <div class="jumbotron">
-            <h1>Ujian Tengah Semester Algoritma Pemrograman</h1>
-            <figure>
-                <img src="assets/image/logomachung.png" height="300px" />
-                <figcaption>Dibuat oleh : Heka dan Xander</figcaption>
-            </figure>
-            <p>Ulangan Tengah Semester</p>
-        </div>
         <nav>
-
+            <p class="d-inline-flex gap-1">
+                <a href="index.html" class="btn" role="button" data-bs-toggle="button">⤺BACK</a>
+            </p>
         </nav>
     </header>
 
     <main>
         <div id="content">
             <article id="topik3" class="card">
-                <h2>Menentukan Bilangan Terbesar dari 3 Bilangan</h2>
+                <h2>Menentukan Bilangan Ganjil dan Genap</h2>
                 <form method="post" action="">
-                    <label for="bilangan1">Masukkan bilangan pertama:</label>
-                    <input type="number" name="bilangan1" id="bilangan1" required><br><br>
+                    <label for="bilangan">Masukkan bilangan:</label>
+                    <input type="number" name="bilangan" id="bilangan" required>  
 
-                    <label for="bilangan2">Masukkan bilangan kedua:</label>
-                    <input type="number" name="bilangan2" id="bilangan2" required><br><br>
+                    <span class="error" id="error_bilangan"></span><br><br>
 
-                    <label for="bilangan3">Masukkan bilangan ketiga:</label>
-                    <input type="number" name="bilangan3" id="bilangan3" required><br><br>
-
-                    <input type="submit" value="Cari Bilangan Terbesar">
+                    <button type="submit">Cek</button>
                 </form>
 
                 <?php
                 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-                    $bilangan1 = intval($_POST['bilangan1']);
-                    $bilangan2 = intval($_POST['bilangan2']);
-                    $bilangan3 = intval($_POST['bilangan3']);
+                    $bilangan = $_POST['bilangan'];
 
-                    // Logika mencari bilangan terbesar (sama seperti kode sebelumnya)
-                    if ($bilangan1 >= $bilangan2 && $bilangan1 >= $bilangan3) {
-                        $terbesar = $bilangan1;
-                    } elseif ($bilangan2 >= $bilangan1 && $bilangan2 >= $bilangan3) {
-                        $terbesar = $bilangan2;
+                    // Validasi input
+                    if (empty($bilangan) || !is_numeric($bilangan)) {
+                        echo "<p class='error'>Masukkan bilangan yang valid.</p>";
                     } else {
-                        $terbesar = $bilangan3;
+                        // Cek ganjil atau genap
+                        if ($bilangan % 2 == 0) {
+                            echo "<p>$bilangan adalah bilangan genap.</p>";
+                        } else {
+                            echo "<p>$bilangan adalah bilangan ganjil.</p>";
+                        }
                     }
-
-                    echo "<p>Bilangan terbesar adalah: " . $terbesar . "</p>";
                 }
                 ?>
             </article>

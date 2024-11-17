@@ -3,16 +3,17 @@
 
 <head>
   <title>ALPRO</title>
-  <link rel="stylesheet" href="assets/styles/style.css" />
+  <link rel="stylesheet" href="assets/styles/stylee.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
   <header>
-    <div class="jumbotron">
-    </div>
     <nav>
+      <p class="d-inline-flex gap-1">
+        <a href="index.html" class="btn" role="button" data-bs-toggle="button">⤺BACK</a>
+      </p>
     </nav>
   </header>
 
