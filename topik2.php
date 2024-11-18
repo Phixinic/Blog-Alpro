@@ -56,7 +56,7 @@
                     <h2>FLOWCHART</h2>
                     <p>Menentukan Bilangan Terbesar dari 3 Bilangan</p>
                     <figure>
-                        <img src="assets/image/fc3bilangan.png" />
+                        <img src="assets/image/fcganjilgenap.png" />
                     </figure>
                 </header>
             </article>
