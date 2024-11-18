@@ -7,11 +7,10 @@ html {
 header {
   position: relative; /* Membatasi posisi elemen animasi hanya di dalam header */
   overflow: hidden; /* Mencegah kotak keluar dari area header */
-  z-index: 3;
 }
 
 body {
-  background: linear-gradient(0.25turn, #4538bb, #4538bb);
+  background: linear-gradient(0.25turn, #5e4ee9, #5e4ee9);
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -49,16 +48,56 @@ body {
   animation: animate 10s linear infinite; /* Animasi */
   z-index: -99;
 }
-.box div:nth-child(1) { top: 12%; left: 42%; animation: animate 10s linear infinite; }
-.box div:nth-child(2) { top: 70%; left: 50%; animation: animate 7s linear infinite; }
-.box div:nth-child(3) { top: 17%; left: 6%; animation: animate 9s linear infinite; }
-.box div:nth-child(4) { top: 20%; left: 60%; animation: animate 10s linear infinite; }
-.box div:nth-child(5) { top: 67%; left: 10%; animation: animate 6s linear infinite; }
-.box div:nth-child(6) { top: 80%; left: 70%; animation: animate 12s linear infinite; }
-.box div:nth-child(7) { top: 60%; left: 80%; animation: animate 15s linear infinite; }
-.box div:nth-child(8) { top: 32%; left: 25%; animation: animate 16s linear infinite; }
-.box div:nth-child(9) { top: 90%; left: 25%; animation: animate 9s linear infinite; }
-.box div:nth-child(10) { top: 20%; left: 80%; animation: animate 5s linear infinite; }
+.box div:nth-child(1) {
+  top: 12%;
+  left: 42%;
+  animation: animate 10s linear infinite;
+}
+.box div:nth-child(2) {
+  top: 70%;
+  left: 50%;
+  animation: animate 7s linear infinite;
+}
+.box div:nth-child(3) {
+  top: 17%;
+  left: 6%;
+  animation: animate 9s linear infinite;
+}
+.box div:nth-child(4) {
+  top: 20%;
+  left: 60%;
+  animation: animate 10s linear infinite;
+}
+.box div:nth-child(5) {
+  top: 67%;
+  left: 10%;
+  animation: animate 6s linear infinite;
+}
+.box div:nth-child(6) {
+  top: 80%;
+  left: 70%;
+  animation: animate 12s linear infinite;
+}
+.box div:nth-child(7) {
+  top: 60%;
+  left: 80%;
+  animation: animate 15s linear infinite;
+}
+.box div:nth-child(8) {
+  top: 32%;
+  left: 25%;
+  animation: animate 16s linear infinite;
+}
+.box div:nth-child(9) {
+  top: 90%;
+  left: 25%;
+  animation: animate 9s linear infinite;
+}
+.box div:nth-child(10) {
+  top: 20%;
+  left: 80%;
+  animation: animate 5s linear infinite;
+}
 @keyframes animate {
   0% {
     transform: scale(0) translateY(0) rotate(0);
@@ -70,18 +109,13 @@ body {
   }
 }
 
-main, aside, footer {
-  position: relative;
-  z-index: 1;
-}
-
 nav {
   background-color: #2c249e;
   padding: 5px;
   padding-top: 15px;
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 6;
 }
 
 nav a {
@@ -139,6 +173,7 @@ footer {
   background-color: #2c249e;
   text-align: center;
   font-weight: bold;
+  z-index: 5;
 }
 
 .featured-image {
@@ -155,7 +190,7 @@ footer {
   padding: 10px;
   margin-top: 20px;
   text-align: left;
-  z-index: -1;
+  z-index: 5;
 }
 
 .jumbotron {
