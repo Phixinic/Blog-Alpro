@@ -19,7 +19,7 @@
 
     <main>
         <div id="content">
-            <article id="topik3" class="card">
+            <article id="topik3" class="">
                 <h2>Menentukan Bilangan Ganjil dan Genap</h2>
                 <form method="post" action="">
                     <label for="bilangan">Masukkan bilangan:</label>

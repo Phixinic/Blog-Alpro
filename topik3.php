@@ -19,7 +19,7 @@
 
   <main>
     <div id="content">
-      <article id="topik3" class="card">
+      <article id="topik3" class="">
         <h2>Menentukan Bilangan Terbesar dari 3 Bilangan</h2>
         <form method="post" action="">
           <label for="bilangan1">Masukkan bilangan pertama:</label>
