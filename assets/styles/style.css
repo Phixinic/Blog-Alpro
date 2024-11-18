@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 nav {
   background-color: #2c249e;
   padding: 5px;
